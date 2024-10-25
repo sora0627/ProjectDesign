@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "PD Application"
+rootProject.name = "My Application"
 include(":app")
  
