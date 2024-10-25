@@ -5,36 +5,58 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#6A6B24"
-    android:backgroundTint="#E9E2E4"
+    android:background="#FBB957"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="234dp"
-        android:layout_height="72dp"
+        android:layout_width="304dp"
+        android:layout_height="79dp"
+        android:background="#E2D7D7"
+        android:backgroundTint="#E2D7D7"
         android:gravity="center"
         android:text="加盟店一覧"
+        android:textSize="48sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="32dp" />
+        tools:layout_editor_absoluteY="25dp" />
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="232dp"
-        android:layout_height="50dp"
+        android:layout_width="335dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#E2D7D7"
         android:text="検索"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="112dp" />
+        android:textColor="#090909"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <Button
         android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="104dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="#42ADB8"
+        android:text="⚙"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.879"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="122dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="24dp"
+        android:backgroundTint="#42ADB8"
+        android:text="⌂"
+        android:textSize="34sp"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="362dp" />
+        tools:layout_editor_absoluteY="812dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
