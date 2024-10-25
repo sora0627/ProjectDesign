@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FBB957"
+    tools:context=".TitleActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#E2D7D7"
+        android:gravity="center"
+        android:text="食べ切りクン"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent=".1000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent=".9000" />
+
+    <Button
+        android:id="@+id/seni_button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#E2D7D7"
+        android:text="加盟店一覧"
+        android:textColor="#020202"
+        android:textSize="34sp"
+        app:backgroundTint="#E2DCDC"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView5"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent=".1000"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent=".800" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="379dp"
+        android:layout_height="361dp"
+        android:layout_marginTop="24dp"
+        android:text="日本全体でみる食品ロスの内容は、外国産業が25％を占めています。その量なんと約60万トン。\n（令和4年度農林水産省推計）\n「いいね・食べきり推進店」では、小盛メニュー・ハーフサイズメニューの設定や苦手な食材への対応など、食品ロスの削減のために食べ残しを出さない取り組みを行っています。\nぜひ、登録店を利用して食品ロス削減にご協力をお願いします。"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent=".6000"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent=".9000" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent=".2500"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent=".9000"
+        app:srcCompat="@drawable/picture" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
