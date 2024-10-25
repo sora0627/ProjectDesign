@@ -31,20 +31,17 @@
         android:textColor="#0B0B0B"
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.947"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="@+id/search" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="122dp"
         android:layout_height="70dp"
-        android:layout_marginStart="24dp"
         android:backgroundTint="#E2D7D7"
         android:text="⌂"
         android:textColor="#121212"
         android:textSize="34sp"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/search"
         tools:layout_editor_absoluteY="812dp" />
 
     <SearchView
