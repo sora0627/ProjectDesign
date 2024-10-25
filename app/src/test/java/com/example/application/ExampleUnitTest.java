@@ -1,4 +1,4 @@
-package com.example.pdapplication;
+package com.example.application;
 
 import org.junit.Test;
 

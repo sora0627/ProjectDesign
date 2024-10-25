@@ -1,4 +1,4 @@
-cdpackage com.example.pdapplication;
+package com.example.application;
 
 import android.os.Bundle;
 
