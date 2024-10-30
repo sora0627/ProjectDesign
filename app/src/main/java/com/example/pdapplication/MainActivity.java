@@ -21,5 +21,13 @@ public class MainActivity extends AppCompatActivity {
                 finish();
             }
         });
+
+        findViewById(R.id.setting_button).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, SettingActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }
