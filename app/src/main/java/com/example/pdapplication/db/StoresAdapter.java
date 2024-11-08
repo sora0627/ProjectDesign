@@ -46,8 +46,7 @@ public class StoresAdapter extends BaseAdapter {
         TextView text1 = convertView.findViewById(android.R.id.text1);
         TextView text2 = convertView.findViewById(android.R.id.text2);
         text1.setText(stores.getName());
-        text2.setText(stores.getAddress());
-        //text2.setText(stores.getTel());
+        text2.setText(stores.getAddress() + ",Tel: "+ stores.getTel());
 
         return convertView;
     }

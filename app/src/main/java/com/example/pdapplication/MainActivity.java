@@ -19,8 +19,11 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
+    public String input_data;
+
     private DatabaseHelper databaseHelper;
     private StoresAdapter storesAdapter;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState){
@@ -42,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
         search_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String input_data = editText.getText().toString();
+                input_data = editText.getText().toString();
             }
         });
 
