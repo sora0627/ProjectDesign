@@ -1,3 +1,26 @@
 <resources>
-    <string name="app_name">Application</string>
+    <string name="app_name">店舗検索アプリ</string>
+    <string-array name="category_options">
+        <item>すべて</item>
+        <item>食堂・レストラン</item>
+        <item>日本料理・寿司店</item>
+        <item>軽食・カフェ</item>
+        <item>居酒屋・焼肉</item>
+        <item>麺類</item>
+        <item>ファーストフード</item>
+        <item>中華料理</item>
+        <item>ホテル・旅館</item>
+        <item>その他</item>
+    </string-array>
+
+    <string-array name="category_area">
+        <item>すべて</item>
+        <item>金沢駅・武蔵</item>
+        <item>香林坊・片町</item>
+        <item>金沢市 北部</item>
+        <item>金沢市 南部</item>
+        <item>金沢市 東部</item>
+        <item>金沢市 西部</item>
+    </string-array>
+
 </resources>
