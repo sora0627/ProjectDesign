@@ -1,19 +1,20 @@
 package com.example.pdapplication;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.Statement;
 import java.sql.DriverManager;
-import android.os.AsyncTask;
+
 import android.os.Bundle;
 import android.widget.TextView;
+import android.os.AsyncTask;
 
-public  class TestActivity  extends  AppCompatActivity{
+import androidx.appcompat.app.AppCompatActivity;
+
+public class TestActivity extends AppCompatActivity {
     @Override
-    protected void onCreate(Bundle savedInstanceStage){
-        super.onCreate(savedInstanceStage);
+    protected void onCreate(Bundle savedInstanceState){
+        super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_test);
 
         TaskDbConnect task = new TaskDbConnect(this);
@@ -21,9 +22,8 @@ public  class TestActivity  extends  AppCompatActivity{
     }
 }
 
-class TaskDbConnect extends AsyncTask<Void, Void, String> {
+class TaskDbConnect extends AsyncTask<Void, Void, String>{
     TestActivity activity;
-
     public TaskDbConnect(TestActivity activity){
         this.activity = activity;
     }
@@ -34,27 +34,27 @@ class TaskDbConnect extends AsyncTask<Void, Void, String> {
 
         try{
             Class.forName("com.mysql.jdbc.Driver");
-            Connection conn = DriverManager.getConnection("jdbc:mysql://172.18.6.149:3306/pd_db","riku","Asj!xI5j1923");
-            Statement stmt = conn.createStatement();
-            ResultSet rs = stmt.executeQuery("Select * from stores");
+            Connection conn = DriverManager.getConnection("jdbc:mysql://192.168.11.62:3306/pd_db?autoReconnect=true&useSSL=false","ProjectDesign","nishikawa");
+            Statement statement = conn.createStatement();
+            ResultSet resultSet = statement.executeQuery("Select * from stores");
 
-            while(rs.next()){
-                int id = rs.getInt(1);
-                int location = rs.getInt(2);
-                String tid = rs.getString(3);
-                String time = rs.getString(4);
-                text1 += id+" "+location+" "+tid+" "+time+" "+"\r\n";
+            while (resultSet.next()){
+                int id = resultSet.getInt(1);
+                int location = resultSet.getInt(2);
+                String tid = resultSet.getString(3);
+                String time = resultSet.getString(4);
+                text1 += id + " " + location + " " + tid + " " + time + " " + "\r\n";
             }
-        }catch (Exception error){
-            text1=error.getMessage();
+        }catch (Exception e){
+            text1 = e.getMessage();
         }
-        return text1;
+
+        return  text1;
     }
 
     protected void onPostExecute(String result){
         super.onPostExecute(result);
-        TextView textView = (TextView) activity.findViewById(R.id.textView1);
+        TextView textView = (TextView)activity.findViewById(R.id.textview1);
         textView.setText(result);
     }
-
 }

@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //ボタンを押したとき
+        //ボタンを押したとき(ホームに戻る)
         findViewById(R.id.seni_button).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

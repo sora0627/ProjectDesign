@@ -3,4 +3,8 @@
     <string name="seni_sub">サブ画面に遷移</string>
     <string name="seni_main">メイン画面に遷移</string>
     <string name="gamen_sub">サブ画面だよ</string>
+    <string name="hint_key">name</string>
+    <string name="hint_value">address</string>
+    <string name="insert">insert</string>
+    <string name="read">read</string>
 </resources>

@@ -12,7 +12,7 @@ public class TitleActivity extends AppCompatActivity{
     protected  void onCreate(Bundle saveInstanceStage) {
         super.onCreate(saveInstanceStage);
         setContentView(R.layout.activity_title);
-
+        //ボタンを押したとき(検索画面に遷移)
         findViewById(R.id.seni_button).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
