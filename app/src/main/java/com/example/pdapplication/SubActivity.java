@@ -1,6 +1,7 @@
 package com.example.pdapplication;
 
 import android.os.Bundle;
+import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -30,4 +31,5 @@ public class SubActivity extends AppCompatActivity {
         ListView storeListView = findViewById(R.id.storeListView);
         storeListView.setAdapter(storesAdapter);
     }
+
 }

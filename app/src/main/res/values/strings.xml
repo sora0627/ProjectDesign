@@ -1,10 +1,25 @@
 <resources>
-    <string name="app_name">PD Application</string>
-    <string name="seni_sub">サブ画面に遷移</string>
-    <string name="seni_main">メイン画面に遷移</string>
-    <string name="gamen_sub">サブ画面だよ</string>
-    <string name="hint_key">name</string>
-    <string name="hint_value">address</string>
-    <string name="insert">insert</string>
-    <string name="read">read</string>
+    <string name="app_name">店舗検索アプリ</string>
+    <string-array name="category_options">
+        <item>すべて</item>
+        <item>食堂・レストラン</item>
+        <item>日本料理・寿司店</item>
+        <item>軽食・カフェ</item>
+        <item>居酒屋・焼肉</item>
+        <item>麺類</item>
+        <item>ファーストフード</item>
+        <item>中華料理</item>
+        <item>ホテル・旅館</item>
+        <item>その他</item>
+    </string-array>
+
+    <string-array name="category_area">
+        <item>すべて</item>
+        <item>金沢駅・武蔵</item>
+        <item>香林坊・片町</item>
+        <item>金沢市 北部</item>
+        <item>金沢市 南部</item>
+        <item>金沢市 東部</item>
+        <item>金沢市 西部</item>
+    </string-array>
 </resources>
