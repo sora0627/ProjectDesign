@@ -71,8 +71,8 @@
         app:layout_constraintHeight_percent=".2500"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/textView"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.553"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:layout_constraintVertical_bias="0.304"
         app:layout_constraintWidth_default="percent"
         app:layout_constraintWidth_percent=".978" />
 
@@ -111,7 +111,7 @@
         android:id="@+id/textView2"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="48dp"
         android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight_default="percent"
