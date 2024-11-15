@@ -14,7 +14,7 @@
         android:id="@+id/textView"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginBottom="24dp"
+        android:layout_marginBottom="15dp"
         android:background="#E2D7D7"
         android:backgroundTint="#E2D7D7"
         android:text="店舗情報"
@@ -74,9 +74,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight_default="percent"
         app:layout_constraintHeight_percent=".2500"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/textView"
         app:layout_constraintTop_toBottomOf="@+id/textView5"
-        app:layout_constraintVertical_bias="0.275"
+        app:layout_constraintVertical_bias="0.259"
         app:layout_constraintWidth_default="percent"
         app:layout_constraintWidth_percent=".978" />
 
@@ -122,7 +123,7 @@
         android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight_default="percent"
-        app:layout_constraintHeight_percent=".05000"
+        app:layout_constraintHeight_percent=".07000"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintWidth_default="percent"
@@ -136,7 +137,7 @@
         android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="@+id/textView2"
         app:layout_constraintHeight_default="percent"
-        app:layout_constraintHeight_percent=".05000"
+        app:layout_constraintHeight_percent=".07000"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/textView2"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
@@ -156,7 +157,7 @@
         app:layout_constraintStart_toStartOf="@+id/textView4"
         app:layout_constraintTop_toBottomOf="@+id/textView4"
         app:layout_constraintWidth_default="percent"
-        app:layout_constraintWidth_percent=".8000" />
+        app:layout_constraintWidth_percent=".5000" />
 
     <TextView
         android:id="@+id/textView6"
