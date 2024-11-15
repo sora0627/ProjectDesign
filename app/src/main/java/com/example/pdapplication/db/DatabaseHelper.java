@@ -19,6 +19,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     private static final String STORES_COLUMN_NAME = "name";
     private static final String STORES_COLUMN_ADDRESS = "address";
     private static final String STORES_COLUMN_TEL = "tel";
+    private static final String STORES_COLUMN_OPTION = "option";
+    private static final String STORES_COLUMN_AREA = "area";
 
     public DatabaseHelper(Context context){
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
@@ -30,7 +32,9 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 STORES_COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
                 STORES_COLUMN_NAME + " TEXT, " +
                 STORES_COLUMN_ADDRESS + " TEXT, " +
-                STORES_COLUMN_TEL + " TEXT)";
+                STORES_COLUMN_TEL + " TEXT, " +
+                STORES_COLUMN_OPTION + " TEXT, " +
+                STORES_COLUMN_AREA + " TEXT)";
         database.execSQL(createTableQuery);
 
     }
@@ -40,10 +44,18 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         database.execSQL("DROP TABLE IF EXISTS " + TABLE_NAME_STORES);
     }
 
-    public List<Stores> getAllStores(){
+    //
+    public List<Stores> getAllStores(String input_name, String input_options, String input_areas){
         List<Stores> stores = new ArrayList<>();
         SQLiteDatabase database = getReadableDatabase();
-        Cursor cursor = database.query(TABLE_NAME_STORES, null, null, null, null, null, null);
+        Cursor cursor = database.query(
+                TABLE_NAME_STORES,
+                null,
+                STORES_COLUMN_NAME + " like ?",
+                new String[]{"%" + input_name + "%"},
+                null,
+                null,
+                null);
         while (cursor.moveToNext()){
             int id = cursor.getInt(cursor.getColumnIndexOrThrow(STORES_COLUMN_ID));
             String name = cursor.getString(cursor.getColumnIndexOrThrow(STORES_COLUMN_NAME));
@@ -55,5 +67,4 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         database.close();
         return stores;
     }
-
 }

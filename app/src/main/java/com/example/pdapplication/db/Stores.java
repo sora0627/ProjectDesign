@@ -1,10 +1,10 @@
 package com.example.pdapplication.db;
 
 public class Stores {
-    private int id;
-    private String name;
-    private String address;
-    private String tel;
+    private int id = 0;
+    private String name = "";
+    private String address = "";
+    private String tel = "";
 
     public  Stores(int id, String name, String address, String tel){
         this.id = id;
