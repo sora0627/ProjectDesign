@@ -3,4 +3,6 @@
 
     <string name="text" translatable="false">店舗情報</string>
     <string name="button" translatable="false">Button</string>
+    <string name="rink">HPは<a href="https://www.example.com">こちら</a>から</string>
+
 </resources>

@@ -1,47 +1,150 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FEB957"
-    tools:context=".MainActivity">
+    android:background="#6A6B24"
+    android:backgroundTint="#FEB957">
+
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="120dp"
-        android:layout_height="44dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="348dp"
+        android:background="#E2D7D7"
+        android:backgroundTint="#E2D7D7"
         android:text="@string/text"
-        android:textSize="25dp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="343dp" />
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent=".1000"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent=".200"/>
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="64dp"
         android:text="⌂"
-        android:textSize="30dp"
-        tools:layout_editor_absoluteX="39dp"
-        tools:layout_editor_absoluteY="614dp" />
+        android:textSize="34dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textView3"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent=".1000"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent=".200" />
 
     <Button
         android:id="@+id/button3"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="64dp"
         android:text="⚙"
-        android:textSize="30dp"
-        tools:layout_editor_absoluteX="286dp"
-        tools:layout_editor_absoluteY="614dp" />
+        android:textSize="34dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textView3"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent=".1000"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent=".200" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent=".3424"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.558"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent=".8536" />
 
     <Button
         android:id="@+id/button4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="64dp"
         android:text="↩"
-        android:textSize="30dp"
-        tools:layout_editor_absoluteX="128dp"
-        tools:layout_editor_absoluteY="613dp" />
+        android:textSize="34dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent=".1000"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent=".200" />
 
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="612dp"
+        android:text="@string/rink"
+        android:textColorLink="@color/design_default_color_primary"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent=".05000"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent=".4500" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="28dp"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent=".05000"
+        app:layout_constraintHorizontal_bias="0.475"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent=".8000" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="48dp"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent=".05000"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent=".8000" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="48dp"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView4"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent=".05000"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent=".8000" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
