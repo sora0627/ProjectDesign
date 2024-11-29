@@ -33,10 +33,12 @@ android {
 
 dependencies {
 
+    implementation("org.osmdroid:osmdroid-android:6.1.17")
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.activity)
     implementation(libs.constraintlayout)
+    implementation(files("libs\\mysql-connector-j-9.1.0.jar"))
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
