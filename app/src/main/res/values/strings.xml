@@ -3,11 +3,11 @@
     <string-array name="category_options">
         <item>すべて</item>
         <item>食堂・レストラン</item>
-        <item>日本料理・寿司店</item>
+        <item>日本料理・すし店</item>
         <item>軽食・カフェ</item>
         <item>居酒屋・焼肉</item>
         <item>麺類</item>
-        <item>ファーストフード</item>
+        <item>ファストフード</item>
         <item>中華料理</item>
         <item>ホテル・旅館</item>
         <item>その他</item>
@@ -22,4 +22,5 @@
         <item>金沢市 東部</item>
         <item>金沢市 西部</item>
     </string-array>
+    <string name="rink">HPは<a href="https://www.example.com">こちら</a>から</string>
 </resources>

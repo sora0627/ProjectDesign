@@ -3,7 +3,6 @@ package com.example.pdapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -51,6 +50,7 @@ public class MainActivity extends AppCompatActivity {
                 intent.putExtra("Name", stores.getName());
                 intent.putExtra("Address", stores.getAddress());
                 intent.putExtra("Tel",stores.getTel());
+                intent.putExtra("URL",stores.getUrl());
                 startActivity(intent);
             }
         });
