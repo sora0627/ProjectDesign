@@ -40,22 +40,21 @@
         app:layout_constraintStart_toStartOf="@+id/mapView"
         app:layout_constraintTop_toBottomOf="@+id/mapView"
         app:layout_constraintWidth_default="percent"
-        app:layout_constraintWidth_percent=".4000" />
+        app:layout_constraintWidth_percent=".6000" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="28dp"
         android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight_default="percent"
         app:layout_constraintHeight_percent=".07000"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/textView6"
         app:layout_constraintTop_toBottomOf="@+id/textView6"
         app:layout_constraintWidth_default="percent"
-        app:layout_constraintWidth_percent=".94000" />
+        app:layout_constraintWidth_percent=".8000" />
 
     <TextView
         android:id="@+id/textView5"
@@ -103,7 +102,7 @@
         app:layout_constraintHeight_default="percent"
         app:layout_constraintHeight_percent=".05000"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
         app:layout_constraintWidth_default="percent"
         app:layout_constraintWidth_percent=".25700" />
