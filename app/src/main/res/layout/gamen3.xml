@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#6A6B24"
-    android:backgroundTint="#FF9872"
+    android:backgroundTint="#fff0f5"
     tools:context=".MainActivity">
 
     <TextView
@@ -53,8 +53,8 @@
             android:gravity="center"
             android:text="絞り込みを適用"
             android:textSize="18dp"
-            android:textColor="#000000"
-            android:backgroundTint="#B0C4DE"
+            android:textColor="#e2e4e2"
+            android:backgroundTint="#a9063d"
             app:layout_constraintTop_toTopOf="parent" />
 
         <ListView
@@ -66,7 +66,8 @@
             android:layout_marginEnd="10dp"
             android:layout_marginBottom="10dp"
             android:background="#E2D7D7"
-            android:backgroundTint="#EDFFBE"
+            android:backgroundTint="#ffffff"
+            android:textColor="#f5f3ea"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -84,7 +85,8 @@
         android:inputType="text"
         android:textSize="18dp"
         android:textColor="#000000"
-        android:backgroundTint="#F0FFF0"
+        android:background="#fff0f5"
+        android:backgroundTint="#ffffff"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight_default="percent"
         app:layout_constraintHeight_percent=".05"
@@ -98,11 +100,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
-        android:background="#E2D7D7"
-        android:backgroundTint="#F0E68C"
         android:text="ジャンル"
         android:textSize="24dp"
-        android:textColor="#5D4037"
+        android:textColor="#252424"
         app:layout_constraintStart_toStartOf="@+id/search_bar"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -116,7 +116,7 @@
         android:entries="@array/category_options"
         android:textSize="24sp"
         android:textcolor="#ffffff"
-        android:background="#FFFFFF"
+        android:background="#ffffff"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight_default="percent"
         app:layout_constraintHeight_percent=".05"
@@ -129,11 +129,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="210dp"
-        android:background="#E2D7D7"
-        android:backgroundTint="#F0E68C"
         android:text="エリア"
         android:textSize="24dp"
-        android:textColor="#5D4037"
+        android:textColor="#252424"
         app:layout_constraintStart_toStartOf="@+id/category_spinner"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -144,7 +142,7 @@
         android:layout_marginStart="30dp"
         android:layout_marginTop="245dp"
         android:layout_marginEnd="30dp"
-        android:background="#FFFFFF"
+        android:background="#ffffff"
         android:entries="@array/category_area"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight_default="percent"
