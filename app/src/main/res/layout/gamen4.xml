@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#6A6B24"
-    android:backgroundTint="#ebefc2"
+    android:backgroundTint="#ffa500"
     tools:context=".MainActivity">
 
     <TextView
@@ -53,8 +53,8 @@
             android:gravity="center"
             android:text="絞り込みを適用"
             android:textSize="18dp"
-            android:textColor="#ebefc2"
-            android:backgroundTint="#eb4d2c"
+            android:textColor="#000000"
+            android:backgroundTint="#ffffff"
             app:layout_constraintTop_toTopOf="parent" />
 
         <ListView
@@ -65,8 +65,7 @@
             android:layout_marginTop="20dp"
             android:layout_marginEnd="10dp"
             android:layout_marginBottom="10dp"
-            android:background="#E2D7D7"
-            android:backgroundTint="#ffffff"
+            android:background="@drawable/frame_style"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -98,8 +97,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
-        android:background="#E2D7D7"
-        android:backgroundTint="#ebefc2"
         android:text="ジャンル"
         android:textSize="24dp"
         android:textColor="#292631"
@@ -115,7 +112,7 @@
         android:layout_marginEnd="30dp"
         android:entries="@array/category_options"
         android:textSize="24sp"
-        android:background="#FFFFFF"
+        android:background="@drawable/frame_style"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight_default="percent"
         app:layout_constraintHeight_percent=".05"
@@ -128,8 +125,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="210dp"
-        android:background="#E2D7D7"
-        android:backgroundTint="#ebefc2"
         android:text="エリア"
         android:textSize="24dp"
         android:textColor="#292631"
@@ -143,7 +138,7 @@
         android:layout_marginStart="30dp"
         android:layout_marginTop="245dp"
         android:layout_marginEnd="30dp"
-        android:background="#FFFFFF"
+        android:background="@drawable/frame_style"
         android:entries="@array/category_area"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight_default="percent"
