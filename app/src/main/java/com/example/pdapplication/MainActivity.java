@@ -75,22 +75,5 @@ public class MainActivity extends AppCompatActivity {
                 storeListView.setAdapter(storesAdapter);
             }
         });
-
-        //ホーム画面遷移
-        findViewById(R.id.button3).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                finish();
-            }
-        });
-
-        //設定画面遷移
-        findViewById(R.id.button4).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, SettingActivity.class);
-                startActivity(intent);
-            }
-        });
     }
 }

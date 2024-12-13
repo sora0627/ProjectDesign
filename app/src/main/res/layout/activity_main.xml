@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#6A6B24"
-    android:backgroundTint="#FBB957"
+    android:backgroundTint="#FFffff"
     tools:context=".MainActivity">
 
     <TextView
@@ -23,34 +23,6 @@
         app:layout_constraintHeight_percent=".100"
         app:layout_constraintWidth_default="percent"
         app:layout_constraintWidth_percent=".9000"/>
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="20dp"
-        android:text="⌂"
-        android:textSize="34dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHeight_default="percent"
-        app:layout_constraintHeight_percent=".1000"
-        app:layout_constraintStart_toStartOf="@+id/textView"
-        app:layout_constraintWidth_default="percent"
-        app:layout_constraintWidth_percent=".200" />
-
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="20dp"
-        android:text="⚙"
-        android:textSize="34dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/textView"
-        app:layout_constraintHeight_default="percent"
-        app:layout_constraintHeight_percent=".1000"
-        app:layout_constraintWidth_default="percent"
-        app:layout_constraintWidth_percent=".200" />
 
     <!-- 検索バー -->
 
@@ -76,11 +48,13 @@
             android:layout_width="match_parent"
             android:layout_height="77dp"
             android:layout_marginLeft="0dp"
-            android:layout_marginTop="290dp"
+            android:layout_marginTop="300dp"
             android:layout_marginRight="0dp"
             android:gravity="center"
             android:text="絞り込みを適用"
             android:textSize="18dp"
+            android:textColor="#000000"
+            android:backgroundTint="#FEEAFF"
             app:layout_constraintTop_toTopOf="parent" />
 
         <ListView
@@ -90,9 +64,8 @@
             android:layout_marginStart="10dp"
             android:layout_marginTop="20dp"
             android:layout_marginEnd="10dp"
-            android:layout_marginBottom="100dp"
-            android:background="#E2D7D7"
-            android:backgroundTint="#E2D7D7"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/frame_style"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -109,6 +82,9 @@
         android:hint="店舗名を検索"
         android:inputType="text"
         android:textSize="18dp"
+        android:textColor="#000000"
+        android:background="#fff7db"
+        android:backgroundTint="#ffffff"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight_default="percent"
         app:layout_constraintHeight_percent=".05"
@@ -122,10 +98,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
-        android:background="#E2D7D7"
-        android:backgroundTint="#E2D7D7"
+        android:background="@drawable/frame_style"
         android:text="ジャンル"
         android:textSize="24dp"
+        android:textColor="#292631"
         app:layout_constraintStart_toStartOf="@+id/search_bar"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -138,6 +114,7 @@
         android:layout_marginEnd="30dp"
         android:entries="@array/category_options"
         android:textSize="24sp"
+        android:background="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight_default="percent"
         app:layout_constraintHeight_percent=".05"
@@ -151,9 +128,10 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="210dp"
         android:background="#E2D7D7"
-        android:backgroundTint="#E2D7D7"
+        android:backgroundTint="#FEEAFF"
         android:text="エリア"
         android:textSize="24dp"
+        android:textColor="#292631"
         app:layout_constraintStart_toStartOf="@+id/category_spinner"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -164,6 +142,7 @@
         android:layout_marginStart="30dp"
         android:layout_marginTop="245dp"
         android:layout_marginEnd="30dp"
+        android:background="#FFFFFF"
         android:entries="@array/category_area"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight_default="percent"
