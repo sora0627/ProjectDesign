@@ -16,28 +16,13 @@
         android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight_default="percent"
-        app:layout_constraintHeight_percent=".506500"
+        app:layout_constraintHeight_percent=".6500"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintWidth_default="percent"
         app:layout_constraintWidth_percent=".9478">
     </org.osmdroid.views.MapView>
 
-    <TextView
-        android:id="@+id/text"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="64dp"
-        android:text="@string/rink"
-        android:textColorLink="@color/design_default_color_primary"
-        android:textSize="20sp"
-        app:layout_constraintHeight_default="percent"
-        app:layout_constraintHeight_percent=".05000"
-        app:layout_constraintStart_toStartOf="@+id/textView7"
-        app:layout_constraintTop_toBottomOf="@+id/textView5"
-        app:layout_constraintWidth_default="percent"
-        app:layout_constraintWidth_percent=".6000" />
 
     <TextView
         android:id="@+id/textView2"
